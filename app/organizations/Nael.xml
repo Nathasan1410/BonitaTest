@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ASCII"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="71220872">
+      <firstName>Nathanael</firstName>
+      <lastName>Santoso</lastName>
+      <title>Mr</title>
+      <jobTitle>Manager</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>nathanael.santoso@ti.ukdw.ac.id</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="71220873">
+      <firstName>Budi</firstName>
+      <lastName>Siregar</lastName>
+      <title>Mr</title>
+      <jobTitle>Junior HR</jobTitle>
+      <manager>71220872</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="manager">
+      <displayName>Manager</displayName>
+      <description>ini manager kegantengan Nael</description>
+    </role>
+    <role name="worker">
+      <displayName>Worker</displayName>
+      <description>ini adalah budak pekerja dari kegantengan Nael	</description>
+    </role>
+  </roles>
+  <groups>
+    <group name="NaelGanteng">
+      <displayName>NaelGanteng</displayName>
+      <description>Ini adalah grup yang merepresentasikan kegantengan Organisasi Nael</description>
+    </group>
+    <group name="employees" parentPath="/NaelGanteng">
+      <displayName>Employees</displayName>
+      <description>ini grup perbudakan dari budak budak kegantengan Nael (freaky ahh description)</description>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>71220872</userName>
+      <roleName>manager</roleName>
+      <groupName>NaelGanteng</groupName>
+    </membership>
+    <membership>
+      <userName>71220873</userName>
+      <roleName>worker</roleName>
+      <groupName>NaelGanteng</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
